@@ -1,0 +1,49 @@
+.content
+{
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-direction:column;
+	background:#CCC;
+	border-radius:10px;
+}
+.header
+{
+    width:100%;
+	height:auto;
+	text-align:center;
+	font-size:36px;
+	font-family:Helvetica;	
+}
+.table
+{
+    text-align: center;
+}
+.table th
+{
+    text-align: center;
+    font-size: 24px;
+    font-family: Helvetica;
+    background: rgb(44, 0, 0);
+    color: aquamarine;
+}
+.ilk
+{
+    background:rgb(179, 226, 245);
+    font-size: 18px;
+}
+.orta
+{
+    background: rgb(201, 245, 201);
+    font-size: 18px;
+}
+.lise
+{
+    background:rgb(179, 226, 245);
+    font-size: 18px;
+}
+.universite
+{
+    background: rgb(201, 245, 201);
+    font-size: 18px;
+}

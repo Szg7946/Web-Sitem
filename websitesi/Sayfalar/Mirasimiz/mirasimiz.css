@@ -1,0 +1,32 @@
+.content
+{
+	width:100%;	
+	height:500px;
+	background:#CCC;
+	border-radius:20px;
+}
+.header
+{
+    width:100%;
+	height:auto;
+	text-align:center;
+	font-size:36px;
+    font-family:Helvetica;	
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1
+{
+    text-align:center;
+}
+.resim
+{
+    max-width:100% ;
+}
+
+.footer
+{
+	width:100%;
+	height: 600px;
+}
