@@ -1,0 +1,27 @@
+.content{
+	width:100%;	
+	height:500px;
+	background:#CCC;
+	border-radius:20px;
+}
+.header{
+	width:100%;
+	height:auto;
+	text-align:center;
+	font-size:36px;
+	font-family:Helvetica;	
+}
+.tablo
+{
+	font-size:24px;
+}
+.sutun1
+{
+	background:#AEB6D9;
+	text-align:end;
+}
+.sutun2
+{
+	background:#A4D0A7;
+	text-align:start;
+}
