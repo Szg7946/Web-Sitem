@@ -6,16 +6,15 @@
 	background:#CCC;
 	border-radius:10px;
 }
-.header{
-	
-	width:100%;
-	height:auto;
-	text-align:center;
-	font-size:36px;
-	font-family:Helvetica;	
+p{font-size: 20px;}
+.header
+{
+	background-color: rgb(0, 87, 68) !important;
+	border-radius: 15px 15px 0 0 !important;
 }
 .gezilecek-yer{
 	text-align:center;
+	color: darkblue;
 	width:100;
 	height:auto;
 	font-size:24px;
@@ -23,28 +22,52 @@
 #slider{
 	 position:relative;
 	 margin:0 auto;
-	 width:600px;
-	 height:300px;
+	 width:70%;
+	 height:auto;
+	 display: flex;
+	justify-content:center;
+	align-items: center;
 	 font: 19px sans-serif;
 	 overflow: hidden;
+	 text-align: center;
+	 border-radius: 15px;
 }
-#kontrol {
-	 
-	 position:absolute;
-	 right:0;
-	 bottom:10px;
-	 
+.resim img
+{
+	border-radius: 15px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+ .onceki
+ {
+	position: absolute;
+	left:0px;
  }
- 
- #kontrol a {
-	 
-	 color:white;
-	 background: rgba(0,0,0,0.5);
-	 padding:10px;
-	 text-decoration:none;
-	 
-	 
+ .sonraki
+ {
+	position: absolute;
+	right: 0px;
+	
  }
+.onceki a,.sonraki a{
+	 
+	color:white;
+	background: rgba(0,0,0,0.5);
+	padding:10px;
+	text-decoration:none;
+	
+	
+}
+.onceki a:hover,.sonraki a:hover{text-decoration: none; color:white;}
+span
+{
+	text-align: center;
+	color:darkred;
+}
 
 
-
+@media (max-width: 767.98px) 
+{
+	#slider{width:100%}
+}
