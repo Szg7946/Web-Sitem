@@ -7,30 +7,52 @@
 
     
 <link rel="stylesheet" href="main.css" type="text/css">
-<script type="text/javascript" src="main.js">
-	
-</script>
+<link rel="stylesheet" href="bootstrap.css" type="text/css">
+
 
     <title>Web Sitesi</title>
   </head>
   <body>
-  <div>
-	<header class="header"<a href="index.html">Burak SEZGİN</a></header>
-	<div class="nav">
-    <div class="nav-item"><a class="nav-link" href="Sayfalar/Hakkimda/hakkimda.html" target="iframe">Hakkımda</a></div>
-    <div class="nav-item"><a class="nav-link" href="Sayfalar/Ozgecmis/ozgecmis.html" target="iframe">Özgeçmiş</a></div>
-    <div class="nav-item"><a class="nav-link" href="Sayfalar/Sehrim/sehrim.html" target="iframe">Şehrim</a></div>
-    <div class="nav-item"><a class="nav-link" href="Sayfalar/Mirasimiz/mirasimiz.html" target="iframe">Mirasımız</a></div>
-    <div class="nav-item"><a class="nav-link" href="Sayfalar/İletisim/iletisim.html" target="iframe">İletişim</a></div> 
-    <div class="nav-item"><a class="nav-link" href="Sayfalar/Giris/giris.html" target="iframe">Giriş</a></div>
+  <div class="container-fluid">
+  <header class="header"><a href="index.html">Burak SEZGİN</a></header>
+  <div class="nav">
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Sayfalar/Hakkimda/hakkimda.html" target="iframe">Hakkımda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Sayfalar/Ozgecmis/ozgecmis.html" target="iframe">Özgeçmiş</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Sayfalar/Sehrim/sehrim.html" target="iframe">Şehrim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Sayfalar/Mirasimiz/mirasimiz.html" target="iframe">Mirasımız</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Sayfalar/İletisim/iletisim.html" target="iframe">İletişim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Sayfalar/Giris/giris.html" target="iframe">Giriş</a>
+        </li>
+      </ul>
     </div>
-    
-    <div class="content">
-    <div class="content-frame">
-    <iframe width="100%" height="680" style="overflow: hidden;" frameborder="0" name="iframe"></iframe>
+  </nav>
+  </div>
+    <div class="row">
+    <div class="col-md-10">
+    <iframe width="100%" height="550" style="border-radius: 20px;" src="Sayfalar/Hakkimda/hakkimda.html" frameborder="0" name="iframe"></iframe>
     </div>
     </div>
   </div>
-
+  <script type="text/javascript" src="bootstrap.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
