@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Giriş</title>
     <link rel="stylesheet" type="text/css" href="giris.css">
+    <link rel="stylesheet" href="../../main.css" type="text/css">
+    <link rel="stylesheet" href="../../bootstrap.css" type="text/css">
+
 </head>
 <body>
-<div class="content">
-<header class="header">Giriş</header>
-<hr>
+<div class="continer-fluid container-frame">
+<header class="header">Giriş</header><br>
+<div class="row"><div class="col-10">
 <div class="form">
-<form action="giris.php" method="POST"><table align="center">
-  <tr>
-    <td class="sutun1">Kullanıcı Adı:</td>
-    <td class="sutun2"><input class="input" name="kullaniciAdi" type="email" required placeholder="burak.sezgin@ogr.sakarya.edu.tr"></td>
-  </tr>
-  <tr>
-    <td class="sutun1">Şifre:</td>
-    <td class="sutun2"><input class="input" name="sifre" type="password" placeholder="szg" required></td>
-  </tr>
-</table>
+<form action="giris.php" method="POST">
+Kullanıcı Adı:
+<input class="input" name="kullaniciAdi" type="email" required placeholder="burak.sezgin@ogr.sakarya.edu.tr"><br><br>
+Şifre:
+<input class="input" name="sifre" type="password" placeholder="szg" required><br><br>
+
 <div style="width: 100%;text-align: center;">
-<input class="submit" type="submit"></div>
+<input class="submit" type="submit" value="Giriş Yap"></div>
 </form>
 </div>
+</div></div>
 </div>
 <script type="text/javascript" src="giris.js"></script>
 </body>
