@@ -6,32 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>İletişim</title>
     <link rel="stylesheet" type="text/css" href="iletisim.css">
+    <link rel="stylesheet" href="../../main.css" type="text/css">
+    <link rel="stylesheet" href="../../bootstrap.css" type="text/css">
 </head>
 <body>
-<div class="content">
-<header class="header">İletişim</header>
-<form action="iletisim.php" method="post" onSubmit="return gonder()" id="form">
-<table width="100%" class="tablo">
+<div class="container-fluid container-frame">
+
+<div class="row"><div class="col-10">
+  <table class="tablo">
   <tr>
-    <td class="sutun1"> E-Posta:</td>
-    <td class="sutun2"> <input type="email" style="width:300px;" name="eposta" id="eposta" placeholder="ornek@mail.com" required></td>
+    <th scope="col" colspan="2">İletişim Formu</th>
   </tr>
-  <tr>
-    <td class="sutun1">Telefon:</td>
-    <td class="sutun2"><input type="tel" name="tel" id="tel" placeholder="" required></td>
-  </tr>
-  <tr>
-    <td class="sutun1">Ad:</td>
-    <td class="sutun2"><input type="text" name="ad" id="ad" placeholder="Adınız..." required></td>
-    </tr>
-  <tr>
-    <td class="sutun1">Soyad:</td>
-    <td class="sutun2"><input type="text" name="soyad" id="soyad" placeholder="Soyadınız..." required></td>
-    </tr>
-  </tr>
-  <tr>
-    <td class="sutun1">Şehir:</td>
-    <td class="sutun2"><select name="sehir" id="sehir" required >
+  </table>
+  <div class="form">
+  <form action="iletisim.php" method="post" onSubmit="return gonder()" id="form">
+  
+<div class="bilgi"> E-Posta:</div>
+      
+<input type="email" class="input" style="width:300px;" name="eposta" id="eposta" placeholder="ornek@mail.com" >
+<br><br>
+<div class="bilgi">Telefon:</div>
+<input type="tel" name="tel" style="width:300px;" class="input" id="tel" placeholder="" >
+
+<br><br>
+<div class="bilgi">Ad:</div>
+<input type="text" name="ad" style="width:300px;" class="input" id="ad" placeholder="Adınız..." >
+
+<br><br>
+<div class="bilgi">Soyad:</div>
+<input type="text" name="soyad" style="width:300px;" class="input"id="soyad" placeholder="Soyadınız..." >
+
+
+<br><br>
+<div class="bilgi">Şehir:</div>
+<select name="sehir" class="input" id="sehir"  >
 <option>İstanbul</option>
 <option>Ankara</option>
 <option>Amasya</option>
@@ -40,51 +48,26 @@
 <option>Tokat</option>
 <option>Adıyaman</option>
 <option>Ordu</option>
-</select></td>
-  </tr>
-  <tr>
-    <td class="sutun1">Cinsiyet:</td>
-    <td class="sutun2"><p>
-      <label>
-        <input type="radio" name="cinsiyet" value="Erkek" id="erkek">
-        Erkek</label>
-      <br>
-      <label>
-        <input type="radio" name="cinsiyet" value="Kadın" id="kadin">
-        Kadın</label>
-      <br>
-    </p></td>
-  </tr>
-  <tr>
-    <td  class="sutun1">&nbsp;</td>
-    <td class="sutun2"><input type="checkbox" name="onay" id="onay" required> Onaylıyorum</td>
-  </tr>
-  <tr>
-    <td  class="sutun1">Mesaj:</td>
-    <td class="sutun2"><textarea name="mesaj" id="mesaj" style="height:100px; width:600px"placeholder="Mesajınız..."required></textarea></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><input type="submit" value="Gönder" onClick="gonder()"><input type="reset" value="Sıfırla">
-</td>
-  </tr>
+</select>
   
-  </form>
-</table>
+<br><br>
+<div class="bilgi">Cinsiyet:</div>
 
-  <br>
-   <br>
-    <br>
-    
-  
-  
-  
-<br>
-
-
-
-
+    <div class="input-div"><input type="radio" name="cinsiyet" class="input" value="Erkek" id="erkek">Erkek&nbsp;&nbsp;
+    <input type="radio" name="cinsiyet" class="input" value="Kadın" id="kadin">Kadın</div>
+    <br><br>
+    <div class="bilgi">Onay:</div>
+    <div class="input-div"><input type="checkbox" class="input" name="onay" id="onay"> Onaylıyorum</div><br><br>
+    <div class="bilgi">Mesaj:</div>
+<textarea name="mesaj" class="input" id="mesaj" style="height:100px; width:100%"placeholder="Mesajınız..."></textarea>
+    <br><br>
+    <input type="submit" style="border-radius: 10px;background-color: white; border:none;" value="Gönder" onclick="gonder()">
+    <input type="reset"  style="border-radius: 10px;background-color: white; border:none;" value="Sıfırla">
+</form>
 </div>
+</div></div>
+<br><br><br><br>
+
 <script type="text/javascript" src="iletisim.js"></script>
 </body>
 </html>

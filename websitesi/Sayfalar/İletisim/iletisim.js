@@ -57,7 +57,7 @@ function kontrolEposta()
 function kontrolTel()
 {
 	var tel=document.getElementById("tel");
-	if(tel.value=="" || tel.value.length<10 || tel.value.includes("ö") || tel.value.includes("b") || tel.value.includes("ı") || tel.value.includes("p") || tel.value.includes("c") || tel.value.includes("i") || tel.value.includes("r") || tel.value.includes("ç") || tel.value.includes("j") || tel.value.includes("s") || tel.value.includes("d") || tel.value.includes("k") || tel.value.includes("ş") || tel.value.includes("e") || tel.value.includes("l") || tel.value.includes("t") || tel.value.includes("f") || tel.value.includes("m") || tel.value.includes("u") || tel.value.includes("g") || tel.value.includes("n") || tel.value.includes("ü") || tel.value.includes("ğ") || tel.value.includes("o") || tel.value.includes("v") || tel.value.includes("h") || tel.value.includes("y") || tel.value.includes("z") || tel.value.includes("q") || tel.value.includes("w") || tel.value.includes("x"))
+	if(tel.value=="" || tel.value.length<10 || tel.value.includes("a") ||tel.value.includes("ö") || tel.value.includes("b") || tel.value.includes("ı") || tel.value.includes("p") || tel.value.includes("c") || tel.value.includes("i") || tel.value.includes("r") || tel.value.includes("ç") || tel.value.includes("j") || tel.value.includes("s") || tel.value.includes("d") || tel.value.includes("k") || tel.value.includes("ş") || tel.value.includes("e") || tel.value.includes("l") || tel.value.includes("t") || tel.value.includes("f") || tel.value.includes("m") || tel.value.includes("u") || tel.value.includes("g") || tel.value.includes("n") || tel.value.includes("ü") || tel.value.includes("ğ") || tel.value.includes("o") || tel.value.includes("v") || tel.value.includes("h") || tel.value.includes("y") || tel.value.includes("z") || tel.value.includes("q") || tel.value.includes("w") || tel.value.includes("x"))
 	{
 		tel.value="";
 		tel.placeholder="Telefon numarası girin.";
@@ -79,10 +79,14 @@ function kontrolCinsiyet()
 	var kadin=document.getElementById("kadin");
 	if(erkek.checked || kadin.checked)
 	{
+		erkek.style.borderColor="none";
+		kadin.style.borderColor="none";
 		return true;
 	}
 	else
 	{
+		erkek.style.borderColor="red";
+		kadin.style.borderColor="red";
 		return false;
 	}
 }
@@ -110,24 +114,26 @@ function kontrolOnay()
 	var onay=document.getElementById("onay");
 	if(onay.checked)
 	{
+		onay.style.borderColor="none";
 		return true;
 	}
 	else
 	{
+		onay.style.borderColor="red";
 		return false;
 	}
 }
 
 function gonder()
 {
-	if(kontrolAd() && kontrolSoyad() && kontrolEposta() && kontrolTel() && kontrolCinsiyet() && kontrolMesaj() && kontrolOnay())
+	kontrolAd();kontrolCinsiyet();kontrolEposta();kontrolEposta();kontrolMesaj();kontrolOnay();kontrolSoyad();kontrolTel();
+	if(kontrolAd()==true && kontrolSoyad()==true && kontrolEposta()==true && kontrolTel()==true && kontrolCinsiyet()==true && kontrolMesaj()==true && kontrolOnay()==true)
 	{
-		alert("Mesajınız gönderildi.")
 		return true;
 	}
 	else
 	{
-		alert("Mesaj Gönderilmedi. Lütfen gerekli alanları doldurunuz.")
+		alert("Mesajınız gönderilemedi!")
 		return false;
 	}
 }
