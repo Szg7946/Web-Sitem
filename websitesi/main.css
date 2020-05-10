@@ -1,32 +1,129 @@
+html[data-theme="ana"]
+{
+	--container:rgb(151, 179, 172);
+	--header-index: rgb(0, 39, 46);
+	--header-index-font:#FFF;
+	--nav:#066;
+	--nav-link:#FFF;
+	--nav-link-hover:rgb(70, 94, 95);
+	--nav-link-hover-font:rgb(7, 36, 25);
+	--header: rgb(0, 87, 68);
+}
+
+html[data-theme="kirmizi"]
+{
+	--container:rgb(126, 114, 114);
+	--header-index: rgb(44, 0, 0);
+	--header-index-font:rgb(255, 255, 255);
+	--nav:rgb(77, 29, 29);
+	--nav-link:#FFF;
+	--nav-link-hover:rgb(95, 70, 70);
+	--nav-link-hover-font:rgb(36, 7, 7);
+	--header: rgb(87, 22, 18);
+}
+
+html[data-theme="mavi"]
+{
+	--container:rgb(119, 122, 139);
+	--header-index: rgb(3, 0, 44);
+	--header-index-font:rgb(255, 255, 255);
+	--nav:rgb(29, 40, 77);
+	--nav-link:#FFF;
+	--nav-link-hover:rgb(71, 70, 95);
+	--nav-link-hover-font:rgb(7, 14, 36);
+	--header: rgb(0, 38, 87);
+}
+
+html[data-theme="koyu"]
+{
+	--container:rgb(3, 3, 3);
+	--header-index: rgb(0, 0, 0);
+	--header-index-font:rgb(255, 255, 255);
+	--nav:rgb(44, 44, 44);
+	--nav-link:#FFF;
+	--nav-link-hover:rgb(0, 0, 0);
+	--nav-link-hover-font:rgb(151, 151, 151);
+	--header: rgb(19, 19, 19);
+}
+html[data-theme="acik"]
+{
+	--container:rgb(214, 214, 214);
+	--header-index: rgb(117, 117, 117);
+	--header-index-font:rgb(0, 0, 0);
+	--nav:rgb(145, 145, 145);
+	--nav-link:rgb(15, 15, 15);
+	--nav-link-hover:rgb(97, 97, 97);
+	--nav-link-hover-font:rgb(39, 39, 39);
+	--header: rgb(129, 129, 129);
+}
+html[data-theme="sari"]
+{
+	--container:rgb(168, 177, 127);
+	--header-index: rgb(176, 212, 13);
+	--header-index-font:rgb(255, 255, 255);
+	--nav:rgb(202, 231, 74);
+	--nav-link:rgb(0, 0, 0);
+	--nav-link-hover:rgb(125, 141, 44);
+	--nav-link-hover-font:rgb(115, 124, 34);
+	--header: rgb(158, 160, 36);
+}
+
+
+html[data-theme="mor"]
+{
+	--container:rgb(116, 102, 133);
+	--header-index: rgb(37, 0, 44);
+	--header-index-font:rgb(255, 255, 255);
+	--nav:rgb(59, 29, 77);
+	--nav-link:#FFF;
+	--nav-link-hover:rgb(89, 70, 95);
+	--nav-link-hover-font:rgb(29, 7, 36);
+	--header: rgb(62, 0, 87);
+}
 .container-frame{
-	background:rgb(144, 212, 204) !important;
+	background:rgb(150, 149, 149) !important;
 	
 	max-width: 100%;
 }
 .container-fluid
 {
-	background-color: #CCC;
+	background-color:var(--container);
 	padding:0px !important;
 }
-.header{
+.header-index{
 	width:100%;
-	background: rgb(77, 0, 0);
-	color:#FFF;
+	background: var(--header-index);
 	height:auto;
+	color:var(--header-font);
+	text-align:center;
+	font-size:36px;
+	font-family:Helvetica;	
+}
+.header-index a{
+	text-decoration: none !important;
+	color:var(--header-index-font)
+}
+.header-index a:hover{text-decoration: none;
+color:var(--header-index-font)}
+.header
+{
+	width:100%;
+	height:auto;
+	background-color: var(--header);
+	border-radius: 0 0 0 0 !important;
+	color:#FFF;
 	text-align:center;
 	font-size:36px;
 	font-family:Helvetica;
-	border-radius: 20px 20px 0 0;	
-	
 }
-.header a{
+.header a
+{
 	text-decoration: none !important;
-	color:#FFF !important;
 }
 .baslik
 {
 	text-align: center;
-	color:rgb(43, 2, 2);
+	color:rgb(19, 40, 48);
 	font-size: 36px;
 	font-family: Helvetica;
 }
@@ -35,7 +132,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	background: #066;
+	background: var(--nav);
 	width: 100%;
 	border-radius:0 0 20px 20px;
 }
@@ -48,13 +145,13 @@
 	
 	border-radius:10px;
 	text-align:center;
-	color:#FFF !important;
+	color:var(--nav-link) !important;
 	font-size:28px;
 }
 
 .nav-link:hover {
-	background:#CCC !important;
-	color:#000 !important;
+	background:var(--nav-link-hover) !important;
+	color:var(--nav-link-hover-font) !important;
 }
 .row
 {
@@ -66,8 +163,10 @@
 {
 	width:75% !important;
 }
-
-
+.iframe
+{
+	border-radius: 0 0 20px 20px;
+}
 .tablo
 {
     width: 100%;
@@ -93,13 +192,80 @@
     background: rgb(201, 245, 201);
     font-size: 18px;
 }
-.uc
+
+
+
+
+.tema
 {
-    background:rgb(156, 209, 138);
-    font-size: 18px;
+	width:100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	background:var(--header-index);
+	border-radius:10px 10px 0 0;
 }
-.dort
+.kirmizi
 {
-    background: rgb(201, 245, 201);
-    font-size: 18px;
+	display: block;
+	background: rgb(44, 0, 0);
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+.mavi
+{
+	display: block;
+	background: rgb(3, 0, 44);
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+.ana
+{
+	display: block;
+	background: rgb(0, 39, 46);
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+.koyu
+{
+	display: block;
+	background: rgb(0, 0, 0);
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+.acik
+{
+	display: block;
+	background: rgb(117, 117, 117);
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+.sari-acik
+{
+	display: block;
+	background: rgb(125, 129, 59);
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+.sari-koyu
+{
+	display: block;
+	background: rgb(81, 88, 1);
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+}
+.mor
+{
+	display: block;
+	background: rgb(37, 0, 44);
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
 }
