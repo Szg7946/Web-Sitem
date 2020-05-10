@@ -2,6 +2,7 @@ var sayacM=0;
 var sayacF=0;
 var sayacO=0;
 var sayacS=0;
+
 function muzikler()
 {
     
@@ -172,26 +173,12 @@ function sessizgemi()
     sessizgemikisa[0].style.display="block";
     }
 }
-function fuzuli()
-{
-    var fuzuli=document.getElementsByClassName("fuzuli");
-    var fuzulikisa=document.getElementsByClassName("fuzuli-kisa");
-    if(aynalar[0].style.display=="none")
-    {
-    fuzuli[0].style.display="block";
-    fuzulikisa[0].style.display="none";
-    }
-    else
-    {
-    fuzuli[0].style.display="none";
-    fuzulikisa[0].style.display="block";
-    }
-}
+
 function oerlerki()
 {
     var oerlerki=document.getElementsByClassName("oerlerki");
     var oerlerkikisa=document.getElementsByClassName("oerlerki-kisa");
-    if(aynalar[0].style.display=="none")
+    if(oerlerki[0].style.display=="none")
     {
     oerlerki[0].style.display="block";
     oerlerkikisa[0].style.display="none";
@@ -261,4 +248,11 @@ function dusunuyorum()
     dusunuyorum[0].style.display="none";
     dusunuyorumkisa[0].style.display="block";
     }
+}
+
+function kirmiziH()
+{
+    document.getElementById("header").style.background="red";
+    document.getElementById("headerh").style.background="red !important";
+    
 }

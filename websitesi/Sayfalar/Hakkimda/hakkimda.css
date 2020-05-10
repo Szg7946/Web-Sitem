@@ -1,21 +1,21 @@
-.header
-{
-	background-color: rgb(0, 87, 68) !important;
-	border-radius: 15px 15px 0 0 !important;
-}
+
 p
 {
 	font-size: 20px;
 }
 .col-md-4
 {
-	background-color: rgb(71, 150, 153);
+	background-color: rgb(38, 98, 100);
 	border-radius: 5px;
 	text-align: center;
 	margin:3px
 }
 .col-md-4 a{
 	color: #FFF;
+}
+.col-md-4 a:hover{
+	color: rgb(0, 0, 0);
+	text-decoration: none;
 }
 .hobiler{
 	text-align:center;
@@ -66,6 +66,13 @@ p
 {
 	display: none;
 }
+.oyunlar a{
+	color: #FFF;
+}
+.oyunlar a:hover{
+	color: rgb(235, 184, 17) 22);
+	text-decoration: none;
+}
 .programlama{
 	width:100%;
 	background:#000;
@@ -107,6 +114,7 @@ pre
 {
 	background: rgb(244, 248, 184);
 	display: none;
+	border-radius:0 0 15px 15px;
 }
 .linkm
 {
@@ -128,168 +136,15 @@ pre
 	text-decoration: none;
 	color:rgb(0, 0, 0);
 }
-.aynalar
+
+.siir-uzun
 {
 	border-radius: 10px;
 	background: rgb(128, 119, 72);
 	color:rgb(215, 243, 234);
 	display: none;
 }
-.ovar
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-	display: none;
-}
-.kurbanim
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-	display: none;
-}
-.sakarya
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-	display: none;
-}
-.fuzuli
-{
-	border-radius: 10px;
-	background: rgb(212, 203, 154);
-	color:rgb(7, 51, 36);
-	display: none;
-}
-.tekhece
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-	display: none;
-}
-.gormusuz
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-	display: none;
-}
-.demebari
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-	display: none;
-}
-.yalnizlik
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-	display: none;
-}
-.oerlerki
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-	display: none;
-}
-.ilim
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-	display: none;
-}
-.sessizgemi
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-	display: none;
-}
-.dusunuyorum
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-	display: none;
-}
-.aynalar-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-}
-.ovar-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-}
-.kurbanim-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);}
-.sakarya-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-}
-.fuzuli-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);}
-.tekhece-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-}
-.gormusuz-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-}
-.demebari-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-}
-.yalnizlik-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-}
-.oerlerki-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-}
-.ilim-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-}
-.sessizgemi-kisa
-{
-	border-radius: 10px;
-	background: rgb(128, 119, 72);
-	color:rgb(215, 243, 234);
-}
-.dusunuyorum-kisa
+.siir-kisa
 {
 	border-radius: 10px;
 	background: rgb(128, 119, 72);
