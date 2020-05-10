@@ -1,30 +1,30 @@
-.header
-{
-	background-color: rgb(0, 87, 68) !important;
-	border-radius: 15px 15px 0 0 !important;
-}
-.col-10
-{
-	height:472px !important;
-	display: flex !important;
-	justify-content: center !important;
-}
 
 .form
 {
 	border-radius: 20px;
 	background-color: rgba(51, 51, 51, 0.479);
-	width: 50%;
-	height:300px;
-	padding:20px;
+	height:auto;
+	padding:10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.bilgi
+{
+	background-color: white;
+	border-radius: 10px 10px 0 0;
+	width:20%
 }
 .input
 {
-	border-radius: 5px;
-	background: rgb(49, 196, 134);
-	color:#FFF;
-	width: 100%;
+	border:none;
+	border-radius:0 10px 10px 10px;
+	background: #FFF;
+	color:#000;
+	width: 400px;
 	font-size: 24px;
+
 }
 .submit
 {
@@ -35,12 +35,8 @@
 	font-size: 22px;
 }
 
-@media (max-width: 767.98px) 
-{
-	.input{font-size: 18px;}
-}
 
-@media (max-width: 576px) 
+@media (max-width: 520px) 
 {
-	.input{font-size: 10px;}
+	.input{width:350px}
 }
